@@ -1,0 +1,69 @@
+Arguments: 
+  /Users/maximerobion/.nvm/versions/node/v12.22.1/bin/node /Users/maximerobion/.yarn/bin/yarn.js run build
+
+PATH: 
+  /usr/local/opt/ruby/bin:/Users/maximerobion/.yarn/bin:/Users/maximerobion/.config/yarn/global/node_modules/.bin:/Users/maximerobion/.nvm/versions/node/v12.22.1/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Users/maximerobion/Library/Application Support/cloud-code/installer/google-cloud-sdk/bin:/usr/local/opt/ruby/bin:/Users/maximerobion/.yarn/bin:/Users/maximerobion/.config/yarn/global/node_modules/.bin:/Users/maximerobion/.nvm/versions/node/v20.0.0/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  12.22.1
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/maximerobion/quote-editor/package.json: Unexpected token } in JSON at position 295
+      at JSON.parse (<anonymous>)
+      at /Users/maximerobion/.yarn/lib/cli.js:1629:59
+      at Generator.next (<anonymous>)
+      at step (/Users/maximerobion/.yarn/lib/cli.js:310:30)
+      at /Users/maximerobion/.yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "@rails/actiontext",
+    "version": "7.0.4-3",
+    "description": "Edit and display rich text in Rails applications",
+    "main": "app/assets/javascripts/actiontext.js",
+    "type": "module",
+    "files": [
+      "app/assets/javascripts/*.js"
+    ],
+    "homepage": "https://rubyonrails.org/",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/rails/rails.git"
+    },
+    "bugs": {
+      "url": "https://github.com/rails/rails/issues"
+    },
+    "author": "Basecamp, LLC",
+    "contributors": [
+      "Javan Makhmali <javan@javan.us>",
+      "Sam Stephenson <sstephenson@gmail.com>"
+    ],
+    "license": "MIT",
+    "dependencies": {
+      "@rails/activestorage": ">= 7.0.0-alpha1"
+    },
+    "peerDependencies": {
+      "trix": "^1.3.1"
+    },
+    "devDependencies": {
+      "@rollup/plugin-node-resolve": "^11.0.1",
+      "@rollup/plugin-commonjs": "^19.0.1",
+      "rollup": "^2.35.1",
+      "trix": "^1.3.1"
+    },
+    "scripts": {
+      "build": "rollup --config rollup.config.js"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
