@@ -1,0 +1,18 @@
+current directory: /Users/maximerobion/quote-editor/vendor/bundle/ruby/3.2.0/gems/bootsnap-1.16.0/ext/bootsnap
+/usr/local/opt/ruby/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/maximerobion/quote-editor/vendor/bundle/ruby/3.2.0/gems/bootsnap-1.16.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20230502-92806-40lmjo sitelibdir\=./.gem.20230502-92806-40lmjo clean
+
+current directory: /Users/maximerobion/quote-editor/vendor/bundle/ruby/3.2.0/gems/bootsnap-1.16.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20230502-92806-40lmjo sitelibdir\=./.gem.20230502-92806-40lmjo
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.bundle
+
+current directory: /Users/maximerobion/quote-editor/vendor/bundle/ruby/3.2.0/gems/bootsnap-1.16.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20230502-92806-40lmjo sitelibdir\=./.gem.20230502-92806-40lmjo install
+/usr/bin/install -c -m 0755 bootsnap.bundle ./.gem.20230502-92806-40lmjo/bootsnap
+
+current directory: /Users/maximerobion/quote-editor/vendor/bundle/ruby/3.2.0/gems/bootsnap-1.16.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20230502-92806-40lmjo sitelibdir\=./.gem.20230502-92806-40lmjo clean
