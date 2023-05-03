@@ -1,0 +1,11 @@
+filename {
+  imported: filename();
+}
+
+filename {
+  local: filename();
+  local-mixin: filename();
+  local-function: filename();
+  imported-mixin: filename();
+  imported-function: filename();
+}/*# sourceMappingURL=filename_fn.css.map */

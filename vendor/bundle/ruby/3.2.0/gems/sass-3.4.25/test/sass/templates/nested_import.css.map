@@ -1,0 +1,1 @@
+{"version":3,"sources":["basic.sass","nested_import.css"],"names":[],"mappings":"AAEA;EACE,WAAA;EACA,gBAAA;ACDF;ADGA;EACE,YAAA;EACA,WAAA;ACDF;ADEE;EACE,aAAA;ACAJ;ADCI;EACE,eAAA;EACA,WAAA;ACCN;ADGI;EACE,YAAA;ACDN;ADEI;EACE,YAAA;ACAN;ADCE;EACE,iBAAA;ACCJ","file":"nested_import.css"}

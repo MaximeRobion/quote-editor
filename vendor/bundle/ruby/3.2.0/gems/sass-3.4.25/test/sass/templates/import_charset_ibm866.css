@@ -1,0 +1,9 @@
+@charset "UTF-8";
+@import "foo.css";
+.foo {
+  a: b;
+}
+
+.bar {
+  a: щ;
+}/*# sourceMappingURL=import_charset_ibm866.css.map */
