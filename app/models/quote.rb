@@ -4,13 +4,13 @@ class Quote < ApplicationRecord
     scope :ordered, -> { order(id: :desc) }
 
     # Should be executed every time a new quote is inserted into the database.
-    after_create_commit -> { 
+    #after_create_commit -> { 
                                 # instructs our app that the HTML of the created
                                 # quote should be broadcasted to users subscribed
                                 # to the "quotes" stream and prepended to the DOM
                                 # node with the id of "quotes".
 
-                                broadcast_prepend_to "quotes"
+                                #broadcast_prepend_later_to "quotes"
 
                                 # https://www.hotrails.dev/turbo-rails/turbo-streams
                                 # Under the hood, Turbo has a default value for both the partial and the locals option.
@@ -18,7 +18,10 @@ class Quote < ApplicationRecord
                                 # locals: { quote: self }, 
                                 # By default, the target option will be equal to model_name.plural, 
                                 # target: "quotes" 
-                            }
-    after_update_commit -> { broadcast_replace_to "quotes" }
-    after_destroy_commit -> { broadcast_remove_to "quotes" }                  
+                            #}
+    #after_update_commit -> { broadcast_replace_later_to "quotes" }
+    #after_destroy_commit -> { broadcast_remove_to "quotes" }    
+    
+    # Those three callbacks are equivalent to the following single line
+    broadcasts_to ->(quote) { "quotes" }, inserts_by: :prepend
 end
