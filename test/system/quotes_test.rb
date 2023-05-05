@@ -2,6 +2,8 @@ require "application_system_test_case"
 
 class QuotesTest < ApplicationSystemTestCase
   setup do
+    # Login before everything
+    login_as users(:accountant)
      # We need to order quote as well in the system tests
     @quote = Quote.ordered.first
   end
