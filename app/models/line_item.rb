@@ -9,4 +9,8 @@ class LineItem < ApplicationRecord
   delegate :quote, to: :line_item_date 
   # that way, one can have access more easily to quote object from here
   # line_item.quote instead of line_item.line_item_date.quote
+
+  def total_price
+    quantity * unit_price
+  end
 end
